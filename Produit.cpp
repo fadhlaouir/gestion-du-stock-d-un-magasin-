@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdlib> //pour system(...)
 #include "Produit.h"
 
 using namespace std;
@@ -6,6 +7,7 @@ using namespace std;
 //fct pour notre menu
 int menu()
 {
+    system("cls"); //pour nettoyer l'ecran;
     cout<<"***MENU***"<<endl;
     cout<<"1- Creation"<<endl;
     cout<<"2- Affichage"<<endl;
@@ -24,13 +26,14 @@ int menu()
 //le & permet de transferer la reference de nb et non la copie
 void creation( Produit p[], int& nb)
 {
-    cout<<"Donner le nombre de produits";
+    system("cls");
+    cout<<"Donner le nombre de produits ";
     cin>>nb;
 
     for(int i=0; i<nb; i++)
     {
 testref: //testref est un label qui nous servira a renvoyer ici le compilateur quand on vous on voudra
-        cout<<"donner la reference";
+        cout<<"donner la reference du produit "<<(i+1)<<endl;
 
         //gestion de la cle primaire(refprod)
         if(i==0)
@@ -44,7 +47,7 @@ testref: //testref est un label qui nous servira a renvoyer ici le compilateur q
             {
                 if(p[j].refproduit==tmprefprod)
                 {
-                    cout<<"cette reference existe deja"<<endl;
+                    cout<<" cette reference existe deja "<<endl;
                     system("pause"); //pour maintenir le msg ci dessus d'etre a l'ecran
                     goto testref;
                 }

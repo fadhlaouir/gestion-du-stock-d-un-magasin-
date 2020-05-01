@@ -3,12 +3,18 @@
 
 using namespace std;
 int menu();
+void creation( Produit p[], int& nb);
 int main()
 {
+    const int MAX=500; //capaciter a gerer 500 produits
+    struct Produit tab[MAX];
+    int nb=0; //le sentinelle
+
+
     switch(menu())
     {
     case 1:
-        cout<<" vous avez choisit Creation"<<endl;
+        creation(tab,nb);
         break;
     case 2:
         cout<<" vous avez choisit Affichage"<<endl;

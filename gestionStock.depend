@@ -1,11 +1,12 @@
 # depslib dependency file v1.0
-1588296465 source:c:\users\fadhl\desktop\polytech intl\projects\c++\gestionstock\main.cpp
+1588324563 source:c:\users\fadhl\desktop\polytech intl\projects\c++\gestionstock\main.cpp
 	<iostream>
 	"Produit.h"
 
 1588293010 c:\users\fadhl\desktop\polytech intl\projects\c++\gestionstock\produit.h
 
-1588296865 source:c:\users\fadhl\desktop\polytech intl\projects\c++\gestionstock\produit.cpp
+1588324783 source:c:\users\fadhl\desktop\polytech intl\projects\c++\gestionstock\produit.cpp
 	<iostream>
+	<cstdlib>
 	"Produit.h"
 
