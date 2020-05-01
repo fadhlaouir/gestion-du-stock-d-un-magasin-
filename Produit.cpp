@@ -6,7 +6,7 @@ using namespace std;
 //fct pour notre menu
 int menu(){
 count<<"***MENU***"<<endl;
-count<<"1- Creation"<<endl;
+count<<"1- Création"<<endl;
 count<<"2- Affichage"<<endl;
 count<<"3- Recherche"<<endl;
 count<<"4- Suppression"<<endl;
