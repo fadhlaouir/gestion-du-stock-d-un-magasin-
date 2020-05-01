@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Produit.h"
 
 using namespace std;
 
