@@ -32,6 +32,7 @@ void creation( Produit p[], int& nb)
 
     for(int i=0; i<nb; i++)
     {
+        system("cls"); // nettoyer l'ecran
 testref: //testref est un label qui nous servira a renvoyer ici le compilateur quand on vous on voudra
         cout<<"donner la reference du produit "<<(i+1)<<endl;
 
@@ -43,6 +44,8 @@ testref: //testref est un label qui nous servira a renvoyer ici le compilateur q
         else
         {
             string tmprefprod;
+            cin>>tmprefprod;
+
             for(int j=0; j<i; j++)
             {
                 if(p[j].refproduit==tmprefprod)
@@ -61,7 +64,7 @@ testref: //testref est un label qui nous servira a renvoyer ici le compilateur q
         cin>>p[i].designation;
         cout<<"la quantite ";
         cin>>p[i].qte;
-        cout<<"le prix";
+        cout<<"le prix ";
         cin>>p[i].prix;
         cout<<" le seuil ";
         cin>>p[i].seuil;
